@@ -1,0 +1,19 @@
+#main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+body {
+  color: red;
+}
+
+nav {
+  grid-area: 1/1/4/2;
+}
+
+.video-Gallery-Wrap {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
