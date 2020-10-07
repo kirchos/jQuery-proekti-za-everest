@@ -1,0 +1,82 @@
+h1 {
+    color: red;
+}
+
+#main-wrapper {
+    display: block;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.map-container {
+    position: relative;
+    background-image: url(/img/mkd.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 1150px;
+    height: 700px;
+    margin: 0 auto;
+    border: solid 2px #000;
+   
+   
+   .location{
+       display: block;
+       position: absolute;
+       color: red;
+       object-fit: cover;
+       &:hover{
+           color: rgb(231, 78, 17);
+            font-size: 2.3em;
+       }
+   }
+
+   .aktivno {
+       color: rgb(13, 92, 13)
+   }
+
+   form {      
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, .8);
+    height: 170px;
+    width: 250px;
+    border: solid 3px lightgray;
+    }
+
+    label[for="tech"]{
+        color: #fff;
+        display: block;
+        margin: 5px 0 15px;
+        font-size: 1.2em;
+    }
+
+    select[name='tech']{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .active {
+        display: block;
+    }
+
+}
+
+.gradovi-info  {
+    position: absolute;
+    top: 120px;
+    right: 420px;
+    height: 170px;
+    width: 250px;
+    
+}
+
+.gradovi-info div {
+    color: #000;
+    background: #fff;
+    border: solid 3px lightgray;
+    height: 100%;
+}

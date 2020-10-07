@@ -1,0 +1,58 @@
+{
+    "gradovi": [
+        {
+            "grad": "kocani",
+            "tip": "salon/magacin",
+            "adresa": "рандом улица - 75",
+            "telefon": "070 xxx xxx"
+        },
+        {
+            "grad": "skopje",
+            "tip": "salon/magacin",
+            "adresa": "Рандом улица 187",
+            "telefon": "071 xxx xxx"
+        },
+        {
+            "grad": "bitola",
+            "tip": "salon/magacin",
+            "adresa": "Рандом Улица  56",
+            "telefon": "079 xxx xxx"
+        },
+        {
+            "grad": "gevgelija",
+            "tip": "salon/magacin",
+            "adresa": "Рандом Улица  16",
+            "telefon": "073 xxx xxx"
+        },
+        {
+            "grad": "gostivar",
+            "tip": "salon",
+            "adresa": "Рандом Улица  66",
+            "telefon": "079 xxx xx2"
+        },
+        {
+            "grad": "stip",
+            "tip": "salon",
+            "adresa": "Рандом Улица  96",
+            "telefon": "079 xx3 xxx"
+        },
+        {
+            "grad": "prilep",
+            "tip": "salon",
+            "adresa": "Рандом Улица  91",
+            "telefon": "079 6xx xxx"
+        },
+        {
+            "grad": "ohrid",
+            "tip": "salon",
+            "adresa": "Рандом Улица  16",
+            "telefon": "079 xx6 xxx"
+        },
+        {
+            "grad": "struga",
+            "tip": "salon",
+            "adresa": "Рандом Улица  116",
+            "telefon": "079 xxx x51"
+        }
+    ]
+}
