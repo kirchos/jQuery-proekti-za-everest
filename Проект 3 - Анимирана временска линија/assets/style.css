@@ -1,0 +1,25 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.cover {
+    display: block;
+    width: 200px;
+}
+
+h1,h2, p {
+    letter-spacing: 1px;
+}
+
+.container {
+    width: 900px;
+}
+
+.igri {
+    position: absolute;
+    height: 450px;
+}
