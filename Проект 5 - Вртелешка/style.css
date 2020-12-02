@@ -1,0 +1,121 @@
+.mySlider,
+img {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  perspective: 1200px;
+  display: block;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+img.active {
+  transform-origin: 100% 50%;
+  animation-name: imageIn;
+  animation-duration: 800ms;
+  animation-iteration-count: 1;
+  z-index: 1;
+}
+
+img.inactive {
+  animation-name: imageOut;
+  animation-duration: 800ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes imageOut {
+  to {
+    transform: translateX(100%);
+    filter: brightness(50%);
+  }
+}
+
+@keyframes imageIn {
+  from {
+    filter: brightness(50%);
+    transform: translateX(-100%) rotateY(-20deg);
+    z-index: -1;
+  }
+}
+
+ul {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  z-index: 2;
+}
+
+li {
+  display: inline;
+}
+
+li:not(:last-child) a {
+  margin-right: 16px;
+}
+
+a {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.4);
+  float: left;
+}
+
+a:hover {
+  transition: background-color 300ms;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform-origin: center left;
+  transform: scaleX(0);
+}
+
+a.active::before {
+  animation-name: active;
+  animation-duration: 4800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+a.inactive::before {
+  transition: opacity 800ms;
+  opacity: 0;
+}
+
+@keyframes active {
+  0% {
+    transform-origin: center left;
+    transform: scaleX(0);
+  }
+  45% {
+    transform-origin: center left;
+    transform: scaleX(1);
+  }
+  65% {
+    transform-origin: center right;
+    transform: scaleX(1);
+  }
+  100% {
+    transform-origin: center right;
+    transform: scaleX(0);
+  }
+}

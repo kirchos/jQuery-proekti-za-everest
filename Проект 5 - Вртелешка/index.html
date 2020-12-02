@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-resize/1.1/jquery.ba-resize.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="carousel-3d.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div>
+        <img src="https://www.mobygames.com/images/covers/l/216725-world-of-warcraft-macintosh-front-cover.jpg" alt="1"
+            class="active" data-image="1">
+
+        <img src="https://cdn.wikimg.net/en/strategywiki/images/d/d6/WoW_Cataclysm_cover.jpg" alt="2" data-image="2">
+        <img src="https://www.pcgamesarchive.com/wp-content/uploads/2020/05/World-of-Warcraft-Shadowlands-Cover.png"
+            alt="3" data-image="3">
+
+
+        <ul>
+            <li><a href="#" class="active" data-link="1"></a></li>
+        </ul>
+
+    </div> -->
+    <div>
+        <img src="https://www.pcgamesarchive.com/wp-content/uploads/2020/05/World-of-Warcraft-Shadowlands-Cover.png"
+            alt="1" class="active" data-image="1">
+        <img src="https://cdn.wikimg.net/en/strategywiki/images/d/d6/WoW_Cataclysm_cover.jpg" alt="2" data-image="2">
+        <ul>
+            <li><a href="#" class="active" data-link="1"></a></li>
+            <li><a href="#" data-link="2"></a></li>
+        </ul>
+    </div>
+
+    <script>
+        setInterval(function () {
+            var $inactiveLink = $("[data-link]:not(.active)");
+            var $inactiveImage = $("[data-image]:not(.active)");
+            var $activeLink = $("[data-link].active");
+            var $activeImage = $("[data-image].active");
+
+            $activeImage.removeClass("active").addClass("inactive");
+            $activeLink.removeClass("active").addClass("inactive");
+            $inactiveImage.addClass("active").removeClass("inactive");
+            $inactiveLink.addClass("active").removeClass("inactive");
+        }, 4800);
+    </script>
+
+</body>
+
+</html>
